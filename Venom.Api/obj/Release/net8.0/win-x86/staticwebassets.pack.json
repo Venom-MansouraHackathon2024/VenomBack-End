@@ -1,0 +1,57 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\vs tasks\\Venom\\Venom.Api\\wwwroot\\Upload\\1.jpg",
+      "PackagePath": "staticwebassets\\Upload\\1.jpg"
+    },
+    {
+      "Id": "D:\\vs tasks\\Venom\\Venom.Api\\wwwroot\\Upload\\10.jpg",
+      "PackagePath": "staticwebassets\\Upload\\10.jpg"
+    },
+    {
+      "Id": "D:\\vs tasks\\Venom\\Venom.Api\\wwwroot\\Upload\\11.jpg",
+      "PackagePath": "staticwebassets\\Upload\\11.jpg"
+    },
+    {
+      "Id": "D:\\vs tasks\\Venom\\Venom.Api\\wwwroot\\Upload\\2.jpg",
+      "PackagePath": "staticwebassets\\Upload\\2.jpg"
+    },
+    {
+      "Id": "D:\\vs tasks\\Venom\\Venom.Api\\wwwroot\\Upload\\3.jpg",
+      "PackagePath": "staticwebassets\\Upload\\3.jpg"
+    },
+    {
+      "Id": "D:\\vs tasks\\Venom\\Venom.Api\\wwwroot\\Upload\\4.jpg",
+      "PackagePath": "staticwebassets\\Upload\\4.jpg"
+    },
+    {
+      "Id": "D:\\vs tasks\\Venom\\Venom.Api\\wwwroot\\Upload\\5.jpg",
+      "PackagePath": "staticwebassets\\Upload\\5.jpg"
+    },
+    {
+      "Id": "D:\\vs tasks\\Venom\\Venom.Api\\wwwroot\\Upload\\6.jpg",
+      "PackagePath": "staticwebassets\\Upload\\6.jpg"
+    },
+    {
+      "Id": "D:\\vs tasks\\Venom\\Venom.Api\\wwwroot\\Upload\\7.jpg",
+      "PackagePath": "staticwebassets\\Upload\\7.jpg"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.Venom.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.build.Venom.Api.props",
+      "PackagePath": "build\\Venom.Api.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.buildMultiTargeting.Venom.Api.props",
+      "PackagePath": "buildMultiTargeting\\Venom.Api.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\win-x86\\staticwebassets\\msbuild.buildTransitive.Venom.Api.props",
+      "PackagePath": "buildTransitive\\Venom.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

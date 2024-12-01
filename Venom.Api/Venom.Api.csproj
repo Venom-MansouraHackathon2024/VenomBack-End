@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Venom.Application\Venom.Application.csproj" />
+    <ProjectReference Include="..\Venom.infrastructure\Venom.infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Upload\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Upload\1.jpg" />
+    <None Include="wwwroot\Upload\10.jpg" />
+    <None Include="wwwroot\Upload\11.jpg" />
+    <None Include="wwwroot\Upload\2.jpg" />
+    <None Include="wwwroot\Upload\3.jpg" />
+    <None Include="wwwroot\Upload\4.jpg" />
+    <None Include="wwwroot\Upload\5.jpg" />
+    <None Include="wwwroot\Upload\6.jpg" />
+    <None Include="wwwroot\Upload\7.jpg" />
+  </ItemGroup>
+
+</Project>

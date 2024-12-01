@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Venom.Api.props" />
+</Project>
