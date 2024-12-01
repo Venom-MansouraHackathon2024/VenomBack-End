@@ -1,0 +1,15 @@
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.csproj.AssemblyReference.cache
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.AssemblyInfoInputs.cache
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.AssemblyInfo.cs
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.csproj.CoreCompileInputs.cache
+D:\vs tasks\Venom\Venom.Application\bin\Debug\net8.0\Venom.Application.deps.json
+D:\vs tasks\Venom\Venom.Application\bin\Debug\net8.0\Venom.Application.dll
+D:\vs tasks\Venom\Venom.Application\bin\Debug\net8.0\Venom.Application.pdb
+D:\vs tasks\Venom\Venom.Application\bin\Debug\net8.0\Venom.Domain.dll
+D:\vs tasks\Venom\Venom.Application\bin\Debug\net8.0\Venom.Domain.pdb
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Ap.ADFCDF84.Up2Date
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.dll
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\refint\Venom.Application.dll
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.pdb
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\ref\Venom.Application.dll
