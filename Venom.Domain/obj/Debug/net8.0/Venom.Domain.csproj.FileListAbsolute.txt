@@ -1,0 +1,12 @@
+D:\vs tasks\Venom\Venom.Domain\obj\Debug\net8.0\Venom.Domain.csproj.AssemblyReference.cache
+D:\vs tasks\Venom\Venom.Domain\obj\Debug\net8.0\Venom.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\vs tasks\Venom\Venom.Domain\obj\Debug\net8.0\Venom.Domain.AssemblyInfoInputs.cache
+D:\vs tasks\Venom\Venom.Domain\obj\Debug\net8.0\Venom.Domain.AssemblyInfo.cs
+D:\vs tasks\Venom\Venom.Domain\obj\Debug\net8.0\Venom.Domain.csproj.CoreCompileInputs.cache
+D:\vs tasks\Venom\Venom.Domain\bin\Debug\net8.0\Venom.Domain.deps.json
+D:\vs tasks\Venom\Venom.Domain\bin\Debug\net8.0\Venom.Domain.dll
+D:\vs tasks\Venom\Venom.Domain\bin\Debug\net8.0\Venom.Domain.pdb
+D:\vs tasks\Venom\Venom.Domain\obj\Debug\net8.0\Venom.Domain.dll
+D:\vs tasks\Venom\Venom.Domain\obj\Debug\net8.0\refint\Venom.Domain.dll
+D:\vs tasks\Venom\Venom.Domain\obj\Debug\net8.0\Venom.Domain.pdb
+D:\vs tasks\Venom\Venom.Domain\obj\Debug\net8.0\ref\Venom.Domain.dll
