@@ -95,6 +95,8 @@ In the `appsettings.json` file, the following configurations are used:
     "Password": "wfsv vksy wosp mfaq"
   }
 }
+
+
 ## Development Setup
 
 ### Prerequisites
