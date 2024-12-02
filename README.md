@@ -88,19 +88,14 @@ The **Cretec Marketplace System** is a backend application designed to manage an
    dotnet run
    The API will be available at http://localhost:5000.
 
-Features
-   -Authentication: JWT authentication for secure access.
-   -OTP for Verification: OTP-based two-factor authentication for enhanced security.
-   -Password Reset: Users can reset their passwords via OTP.
-   -Product Management: Admin and Supplier roles can add, update, and delete products.
-   -Order Management: Customers can place orders and track their status.
-   -Cart Management: Customers can add products to their cart and convert it into an order.
-   -Testing
-   -To run tests, use the following command:
+## Features
+- Authentication: JWT authentication for secure access.
+- OTP for Verification: OTP-based two-factor authentication for enhanced security.
+- Password Reset: Users can reset their passwords via OTP.
+- Product Management: Admin and Supplier roles can add, update, and delete products.
+- Order Management: Customers can place orders and track their status.
+- Cart Management: Customers can add products to their cart and convert it into an order.
 
-   ```bash
-   Copy code
-   dotnet test
 
 
 
