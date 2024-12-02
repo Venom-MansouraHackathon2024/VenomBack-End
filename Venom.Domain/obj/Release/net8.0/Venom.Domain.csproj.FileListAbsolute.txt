@@ -10,3 +10,4 @@ D:\vs tasks\Venom\Venom.Domain\obj\Release\net8.0\Venom.Domain.dll
 D:\vs tasks\Venom\Venom.Domain\obj\Release\net8.0\refint\Venom.Domain.dll
 D:\vs tasks\Venom\Venom.Domain\obj\Release\net8.0\Venom.Domain.pdb
 D:\vs tasks\Venom\Venom.Domain\obj\Release\net8.0\ref\Venom.Domain.dll
+D:\vs tasks\Venom\Venom.Domain\obj\Release\net8.0\Venom.Domain.sourcelink.json

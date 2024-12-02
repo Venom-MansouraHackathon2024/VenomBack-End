@@ -50,6 +50,7 @@ namespace Venom.Api.Controllers
         }
 
         [HttpPost]
+        
         public async Task<IActionResult> AddReview([FromBody] AddReviewDto dto)
         {
             var result = await _reviewManager.AddAsync(dto);

@@ -32,6 +32,8 @@ namespace Venom.Api.Controllers
         }
 
         [HttpPut]
+        // [Authorize]
+
         public async Task<IActionResult> Update(ProfileUpdateDto dto)
         {
             if (!ModelState.IsValid)
@@ -49,6 +51,7 @@ namespace Venom.Api.Controllers
 
        
         [HttpDelete("Email/{email}")]
+        //[Authorize]
         public async Task<IActionResult> Delete( string email)
         {
             if (!ModelState.IsValid)

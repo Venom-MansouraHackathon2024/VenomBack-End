@@ -146,3 +146,4 @@ D:\vs tasks\Venom\Venom.Api\obj\Release\net8.0\win-x86\Venom.Api.pdb
 D:\vs tasks\Venom\Venom.Api\obj\Release\net8.0\win-x86\Venom.Api.genruntimeconfig.cache
 D:\vs tasks\Venom\Venom.Api\obj\Release\net8.0\win-x86\ref\Venom.Api.dll
 D:\vs tasks\Venom\Venom.Api\bin\Release\net8.0\win-x86\Venom.Api.staticwebassets.runtime.json
+D:\vs tasks\Venom\Venom.Api\obj\Release\net8.0\win-x86\Venom.Api.sourcelink.json

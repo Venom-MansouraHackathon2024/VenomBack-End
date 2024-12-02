@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Venom.Application.Carts;
 using Venom.Domain.Entites;
 using Venom.Domain.IRepositories;
 using Venom.infrastructure.Persistance;
@@ -26,7 +27,9 @@ namespace Venom.infrastructure.Extentions
             services.AddScoped<IprofileRepo, ProfileRepo>();
             services.AddScoped<IProductRepo, ProductRepo>();
             services.AddScoped<IProductRepo,ProductRepo>();
+            services.AddScoped<ICartItemRepo , CartItemRepo>();
             services.AddScoped<IReviewRepo , ReviewRepo>();
+            services.AddScoped<ICartRepo, CartRepo>();
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
             .AddEntityFrameworkStores<VenomDbContext>()

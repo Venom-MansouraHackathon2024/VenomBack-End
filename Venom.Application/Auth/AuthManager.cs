@@ -1,5 +1,6 @@
 ﻿
 
+using AutoMapper;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
@@ -8,11 +9,13 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Venom.Application.Auth.Dto;
+using Venom.Application.Carts.Dtos;
 using Venom.Application.Dtos;
 using Venom.Application.EmailService;
 using Venom.Application.Otp;
 using Venom.Application.Otp.OtpDtos;
 using Venom.Domain.Entites;
+using Venom.Domain.IRepositories;
 
 namespace Venom.Application.Auth
 {
@@ -23,13 +26,17 @@ namespace Venom.Application.Auth
         private readonly IOtpManager _otpManager;
         private readonly IMemoryCache _cache;
         private readonly IEmailManager _emailManager;
-        public AuthManager(UserManager<ApplicationUser> userManager, IConfiguration configuration, IOtpManager otpManager, IMemoryCache cache, IEmailManager emailManager)
+        private readonly IMapper _mapper;
+        private readonly ICartRepo _cartRepo;
+        public AuthManager(UserManager<ApplicationUser> userManager, IConfiguration configuration, IOtpManager otpManager, IMemoryCache cache, IEmailManager emailManager, IMapper mapper = null, ICartRepo cartRepo = null)
         {
             _userManager = userManager;
             _configuration = configuration;
             _otpManager = otpManager;
             _cache = cache;
             _emailManager = emailManager;
+            _mapper = mapper;
+            _cartRepo = cartRepo;
         }
 
         public async Task<GeneralAuthResponse> Login(LoginDto loginDto)
@@ -86,6 +93,17 @@ namespace Venom.Application.Auth
                 generalAuthResponse.IsSucceeded = false;
                 return generalAuthResponse;
             }
+            var roleResult = await _userManager.AddToRoleAsync(AppUser, "User");
+            var addCartDto = new AddCartDto
+            {
+                UserId = AppUser.Id
+            };
+            var cart = _mapper.Map<Cart>(addCartDto);
+
+            await _cartRepo.AddAsync(cart);
+
+            await _cartRepo.SaveChangesAsync();
+
             List<Claim> claims = new List<Claim>();
             claims.Add(new Claim(ClaimTypes.NameIdentifier, AppUser.Id));
             claims.Add(new Claim(ClaimTypes.Name, AppUser.UserName));

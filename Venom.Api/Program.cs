@@ -20,9 +20,13 @@ builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+
 })
 .AddJwtBearer(options =>
 {
+    options.SaveToken = true;
+    options.RequireHttpsMetadata = false;
     var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
 
     options.TokenValidationParameters = new TokenValidationParameters
@@ -39,6 +43,7 @@ builder.Services.AddAuthentication(options =>
 
 
 builder.Services.AddAuthorization();
+
 
 
 builder.Services.AddApplication(builder.Configuration);

@@ -13,3 +13,4 @@ D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.dll
 D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\refint\Venom.Application.dll
 D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.pdb
 D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\ref\Venom.Application.dll
+D:\vs tasks\Venom\Venom.Application\obj\Debug\net8.0\Venom.Application.sourcelink.json

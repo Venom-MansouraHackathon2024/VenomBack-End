@@ -17,3 +17,4 @@ D:\vs tasks\Venom\Venom.infrastructure\obj\Debug\net8.0\refint\Venom.infrastruct
 D:\vs tasks\Venom\Venom.infrastructure\obj\Debug\net8.0\Venom.infrastructure.pdb
 D:\vs tasks\Venom\Venom.infrastructure\obj\Debug\net8.0\Venom.infrastructure.genruntimeconfig.cache
 D:\vs tasks\Venom\Venom.infrastructure\obj\Debug\net8.0\ref\Venom.infrastructure.dll
+D:\vs tasks\Venom\Venom.infrastructure\obj\Debug\net8.0\Venom.infrastructure.sourcelink.json

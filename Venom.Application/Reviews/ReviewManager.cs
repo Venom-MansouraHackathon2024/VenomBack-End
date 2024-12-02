@@ -52,7 +52,7 @@ namespace Venom.Application.Reviews
         public async Task<GeneralResponseDto> GetProductReviewsAsync(int productId)
         {
             var reviews = await _reviewRepository.GetReviewsByProductIdAsync(productId);
-            if(reviews != null)
+            if(reviews == null)
             {
                 return new GeneralResponseDto { IsSucceeded = false, Message = "no reviews in this product", StatusCode = 404 };
             }

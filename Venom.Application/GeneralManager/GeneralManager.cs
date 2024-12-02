@@ -66,6 +66,7 @@ namespace Venom.Application.GeneralManager
             return CreateResponse(true, null, $"{typeof(T).Name} deleted successfully.", 200);
         }
 
+        
         public virtual async Task<GeneralResponseDto> GetAll()
         {
             var result = await _repository.GetAll().AsNoTracking().ProjectTo<TReadDto>(_mapper.ConfigurationProvider).ToListAsync();

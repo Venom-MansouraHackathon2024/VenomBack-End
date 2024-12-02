@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Venom.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dfaca9a5e539f31a328887cf8454672fd985ee3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Venom.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Venom.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

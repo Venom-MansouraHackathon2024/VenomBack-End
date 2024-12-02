@@ -12,7 +12,7 @@ namespace Venom.Api.Controllers
     [ApiController]
     public class ProductController : ControllerBase
     {
-        private readonly IProductManager _productManager; // Corrected naming
+        private readonly IProductManager _productManager; 
         private readonly IMapper _mapper;
 
         public ProductController(IProductManager productManager, IMapper mapper)
@@ -22,12 +22,13 @@ namespace Venom.Api.Controllers
         }
 
         [HttpGet]
+     //   [Authorize]
         public async Task<ActionResult<GeneralResponseDto>> GetAll()
         {
             var response = await _productManager.GetAll();
             if (!response.IsSucceeded)
             {
-                return NotFound(new { response.StatusCode, response.Message }); // Return appropriate error code
+                return NotFound(new { response.StatusCode, response.Message }); 
             }
             return Ok(new { response.StatusCode, response.Model });
         }
@@ -37,7 +38,7 @@ namespace Venom.Api.Controllers
         {
             var product = await _productManager.GetProductByIdAsync(id);
             if (product.IsSucceeded == false)
-                return NotFound(new { product.Model, product.StatusCode });
+                return NotFound(new { product.Message, product.StatusCode });
 
             return Ok(new { product.Model, product.StatusCode });
         }
@@ -53,7 +54,7 @@ namespace Venom.Api.Controllers
             var response = await _productManager.GetByProductNameAsync(productName);
             if (!response.IsSucceeded)
             {
-                return NotFound(new { response.StatusCode, response.Message }); // Return appropriate error code
+                return NotFound(new { response.StatusCode, response.Message }); 
             }
             return Ok(new { response.StatusCode, response.Model });
         }
@@ -69,7 +70,7 @@ namespace Venom.Api.Controllers
             var response = await _productManager.GetByCategoryNameAsync(categoryName);
             if (!response.IsSucceeded)
             {
-                return NotFound(new { response.StatusCode, response.Message }); // Return appropriate error code
+                return NotFound(new { response.StatusCode, response.Message }); 
             }
             return Ok(new { response.StatusCode, response.Model });
         }
@@ -101,42 +102,48 @@ namespace Venom.Api.Controllers
             var response = await _productManager.GetByPriceInRangeAsync(highPrice, lowPrice);
             if (!response.IsSucceeded)
             {
-                return NotFound(new { response.StatusCode, response.Message }); // Return appropriate error code
+                return NotFound(new { response.StatusCode, response.Message }); 
             }
             return Ok(new { response.StatusCode, response.Model });
         }
 
         [HttpPost]
+      // [Authorize(Roles ="Admin , Supplier")]
         public async Task<ActionResult<GeneralResponseDto>> Add([FromBody] AddProductDto model)
         {
             var response = await _productManager.AddAsync(model);
             if (!response.IsSucceeded)
             {
-                return NotFound(new { response.StatusCode, response.Message }); // Return appropriate error code
+                return NotFound(new { response.StatusCode, response.Message }); 
             }
-            return Ok(new { response.StatusCode, response.Model });
+            response.StatusCode = 201;
+            return Ok(new { response.StatusCode , response.Model });
         }
 
-        [HttpPut("{id:int}")]
+        [HttpPut("{id}")]
+        // [Authorize(Roles ="Admin , Supplier")]
+
         public async Task<ActionResult<GeneralResponseDto>> Update(int id, [FromBody] UpdateProductDto model)
         {
             var response = await _productManager.UpdateAsync(id, model);
             if (!response.IsSucceeded)
             {
-                return NotFound(new { response.StatusCode, response.Message }); // Return appropriate error code
+                return NotFound(new { response.StatusCode, response.Message });
             }
             return Ok(new { response.StatusCode, response.Model });
         }
 
-        [HttpDelete("{id:int}")]
+        [HttpDelete("{id}")]
+        // [Authorize(Roles ="Admin , Supplier")]
+
         public async Task<ActionResult<GeneralResponseDto>> Delete(int id)
         {
             var response = await _productManager.DeleteAsync(id);
             if (!response.IsSucceeded)
             {
-                return NotFound(new { response.StatusCode, response.Message }); // Return appropriate error code
+                return NotFound(new { response.StatusCode, response.Message }); 
             }
-            return Ok(new { response.StatusCode, response.Model });
+            return Ok(new { response.StatusCode, response.Message });
         }
     }
 
