@@ -13,7 +13,6 @@ The **Cretec Marketplace System** is a backend application designed to manage an
 - **Database**: SQL Server  
 - **Authentication**: JWT (JSON Web Token), OTP for two-factor authentication  
 - **Architecture**: Clean Architecture (Domain, Application, Infrastructure, API)  
-- **Testing**: xUnit  
 
 ## Project Structure
 
@@ -76,6 +75,32 @@ The **Cretec Marketplace System** is a backend application designed to manage an
    ```bash
    git clone https://github.com/your-repo/ECommerceSystem.git
    cd ECommerceSystem
+
+2. **Install Dependencies:**
+   ```bash
+   Copy code
+
+   Set Up the Database: Configure the connection string in appsettings.json to connect to your SQL Server database.
+
+3. **Run the Application:**
+   ```bash
+   Copy code
+   dotnet run
+   The API will be available at http://localhost:5000.
+
+Features
+   -Authentication: JWT authentication for secure access.
+   -OTP for Verification: OTP-based two-factor authentication for enhanced security.
+   -Password Reset: Users can reset their passwords via OTP.
+   -Product Management: Admin and Supplier roles can add, update, and delete products.
+   -Order Management: Customers can place orders and track their status.
+   -Cart Management: Customers can add products to their cart and convert it into an order.
+   -Testing
+   -To run tests, use the following command:
+
+   ```bash
+   Copy code
+   dotnet test
 
 
 
