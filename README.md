@@ -66,6 +66,35 @@ The **Cretec Marketplace System** is a backend application designed to manage an
 - **Reviews**: Stores customer reviews and ratings for products.  
 - **Suppliers**: Represents the suppliers who manage product listings.  
 
+
+In the `appsettings.json` file, the following configurations are used:
+ 
+```json
+{
+
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=db10767.public.databaseasp.net; Database=db10767; User Id=db10767; Password=dG-3?5EpR+t2; Encrypt=False;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "Jwt": {
+    "Key": "y9XQ!@324fkpq34Vn04i5#W6$%fTgQwErTgBhYtNmQqPzXqFjKl09",
+    "Issuer": "https://localhost:7209/",
+    "Audience": "https://localhost:7209/"
+  },
+
+  "SmtpSettings": {
+    "Host": "smtp.gmail.com",
+    "Port": 587,
+    "UserName": "moustafa.anafea@gmail.com",
+    "Password": "wfsv vksy wosp mfaq"
+  }
+}
 ## Development Setup
 
 ### Prerequisites
