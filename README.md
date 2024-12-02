@@ -1,3 +1,6 @@
+to try endpoints check this link 
+http://venom.runasp.net/swagger/index.html
+
 # Cretec Marketplace System
 
 ## Project Overview
